@@ -7,7 +7,7 @@ import { User } from "./user.model";
 @Injectable()
 export class AuthService {
 
-    private user: User = null;
+    private user: User | null = null;
     authChange = new Subject<boolean>();
 
     constructor(private router: Router) {}
